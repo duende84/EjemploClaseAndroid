@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="horizontal"
+    >
+
+    <!-- 
+    ANDROID:ID nos indica el nombre de nuestro campo (edittext=
+    ANDROID:WIDTH indica la medida de ancho
+    ANDROID:HEIGHT indica la medida de alto
+    ANDROID:HINT nos relaciona nuestro campo con el archivo string para llamar un texto
+     -->
+  	<EditText android:id="@+id/mensaje"
+  	    android:layout_weight="1"
+  	    android:layout_width="0dp"
+  	    android:layout_height="wrap_content"
+  	    android:hint="@string/hello_world"
+  	    />
+  	
+  	<Button
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:text="@string/boton"
+  	    android:onClick="EjcutarFuncion"
+  	    />
+</LinearLayout>
